@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    url("../fonts/SFProDisplay-Regular.woff") format('woff'),;
+    url("../fonts/fonts/FontsFree-Net-SFProDisplay-Regular.woff2") format('woff2');
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+header {
+    background: #FA8C16;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    color: #FFFFFF;
+}
+
+.header__logo {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 58px;
+    color: #FFFFFF;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-link {
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 15px;
+    color: #FAFAFA;
+    cursor: pointer;
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+}
+
+.header__search {
+    position: relative;
+}
+
+input[type="search"] {
+    color: #BFBFBF;
+}
+
+input[type="search"]::-moz-placeholder {
+    color: #BFBFBF;
+}
+input[type="search"]::-webkit-input-placeholder { color: #BFBFBF; }
+input[type="search"]:-ms-input-placeholder { color: #BFBFBF; }
+input[type="search"]::-ms-input-placeholder { color: #BFBFBF; }
+input[type="search"]::placeholder { color: #BFBFBF; }
+
+.header__search--input {
+    padding: 12px 5px;
+    width: 227px;
+    height: 8px;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    color: #BFBFBF;
+}
+
+.header__search--icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

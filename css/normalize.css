@@ -353,3 +353,7 @@ template {
 input {
   outline: none;
 }
+
+p {
+  margin: 0;
+}

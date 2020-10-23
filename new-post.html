@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Picadu</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div class="header">
+            <div class="nav-bar">
+                <a href="index.html">
+                    <span class="header__logo">
+                        Picadu
+                    </span>
+                </a>
+
+                <div class="df align-items nav-bar__items">
+                    <div class="nav-link">Свежее</div>
+                    <div class="nav-link">Лучшее</div>
+                    <div class="nav-link">Горячее</div>
+                    <div class="nav-link">Подписки</div>
+                </div>
+            </div>
+
+            <div class="header__search">
+                <label>
+                    <svg class="icon search--icon header__search--icon">
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                    <input class="header__search--input" placeholder="Поиск по сайту" type="search">
+                </label>
+            </div>
+
+            <input type="checkbox" id="checkbox2" class="checkbox2 visuallyHidden">
+            <label for="checkbox2" id="hamburger">
+                <div class="hamburger">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                </div>
+            </label>
+        </div>
+    </div>
+</header>
+<section class="section">
+    <div class="df container main-container">
+        <form action="/" class="form-post" method="post">
+            <input placeholder="Заголовок поста" class="form-post__input" type="text">
+            <textarea name="post-text" id="text" placeholder="Текст вашего поста"
+                      class="form-post__textarea"></textarea>
+            <div class="forms__btns">
+                <button class="send-post__btn form-post__send">
+                    <svg class="icon btn-icon__post">
+                        <use xlink:href="img/icons.svg#fire"></use>
+                    </svg>
+                    Опубликовать пост
+                </button>
+
+                <button class="send-post__btn form-post__add-video">
+                    <svg class="icon btn-icon__post form-post__video--icon">
+                        <use xlink:href="img/icons.svg#video"></use>
+                    </svg>
+                    Видео
+                </button>
+
+                <button class="send-post__btn form-post__add-img">
+                    <svg class="icon btn-icon__post form-post__video--icon">
+                        <use xlink:href="img/icons.svg#picture"></use>
+                    </svg>
+                    Фото
+                </button>
+            </div>
+        </form>
+        <aside class="aside">
+            <div class="right-side--profile">
+                <div class="side-profile__header">
+                    <div class="df align-items">
+                        <img class="side-profile__header--img" src="img/avatar3.png" alt="profile">
+                        <p class="side-profile__header--name">Nixyar</p>
+                    </div>
+                    <svg class="icon exit-profile">
+                        <use xlink:href="img/icons.svg#exit"></use>
+                    </svg>
+                </div>
+                <ul class="side-profile--navbar">
+                    <li class="aside-item">Ответы</li>
+                    <li class="aside-item">Комментарии</li>
+                    <li class="aside-item">Оценки</li>
+                    <li class="aside-item">Сохраненное</li>
+                    <li class="aside-item">Подписки</li>
+                    <li class="aside-item">Заметки</li>
+                    <li class="aside-item">Игнор-лист</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

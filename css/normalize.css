@@ -352,6 +352,12 @@ template {
 
 input {
   outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
 }
 
 p {

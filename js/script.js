@@ -1,6 +1,29 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', () => {
+    // HEADER TOGGLE
+
+    let closeBurger = false;
+
+    const burgerBtn = document.querySelector('#hamburger'),
+    asideBar = document.querySelector('aside');
+
+    function closeMenu() {
+        asideBar.classList.remove('show');
+        closeBurger = false;
+    }
+
+    burgerBtn.addEventListener('click', () => {
+        if (closeBurger === false) {
+            asideBar.classList.add('show');
+            closeBurger = true;
+        } else {
+            closeMenu();
+        }
+    });
+
+    // TABS
+
     const sideTabs = document.querySelectorAll('.aside-item'),
         sideBlockTabs = document.querySelector('.side-profile--navbar');
 
@@ -14,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
         sideTabs[i].classList.add('aside-item--active');
     }
 
-    hideTabs();
     showTab();
 
     sideBlockTabs.addEventListener('click', evt => {

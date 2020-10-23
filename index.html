@@ -21,18 +21,32 @@
                     </span>
                 </a>
 
-                <div class="nav-link">Свежее</div>
-                <div class="nav-link">Лучшее</div>
-                <div class="nav-link">Горячее</div>
-                <div class="nav-link">Подписки</div>
+                <div class="df align-items nav-bar__items">
+                    <div class="nav-link">Свежее</div>
+                    <div class="nav-link">Лучшее</div>
+                    <div class="nav-link">Горячее</div>
+                    <div class="nav-link">Подписки</div>
+                </div>
             </div>
 
             <div class="header__search">
                 <label>
-                    <img class="header__search--icon" src="img/icons/search.svg" alt="search">
+                    <svg class="icon search--icon header__search--icon">
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
                     <input class="header__search--input" placeholder="Поиск по сайту" type="search">
                 </label>
             </div>
+
+            <input type="checkbox" id="checkbox2" class="checkbox2 visuallyHidden">
+            <label for="checkbox2" id="hamburger">
+                <div class="hamburger">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                </div>
+            </label>
         </div>
     </div>
 </header>
@@ -44,7 +58,8 @@
                     <div class="post__title">Заголовок поста с интригой</div>
                     <div class="post__description">
                         <p>
-                            xxx: после весенней изоляции с удивлением обнаружили что у нашей компании стало на одного конкурента меньше
+                            xxx: после весенней изоляции с удивлением обнаружили что у нашей компании стало на одного
+                            конкурента меньше
                         </p>
                         <p>
                             xxx: один особо конкурент додумался уволить сотрудников, занимающихся непосредственно
@@ -67,18 +82,26 @@
                 <div class="post__footer">
                     <div class="df post__footer--icons">
                         <div class="post__footer--info">
-                            <img src="img/icons/like.svg" alt="like">
+                            <svg class="icon post__footer--icon post__footer--icon--mr">
+                                <use xlink:href="img/icons.svg#like"></use>
+                            </svg>
                             138
                         </div>
                         <div class="post__footer--info">
-                            <img src="img/icons/comment.svg" alt="comment">
+                            <svg class="icon post__footer--icon post__footer--icon--mr">
+                                <use xlink:href="img/icons.svg#comment"></use>
+                            </svg>
                             12
                         </div>
                         <div class="post__footer--info">
-                            <img src="img/icons/save.svg" alt="save">
+                            <svg class="icon post__footer--icon">
+                                <use xlink:href="img/icons.svg#save"></use>
+                            </svg>
                         </div>
                         <div class="post__footer--info">
-                            <img src="img/icons/share.svg" alt="share">
+                            <svg class="icon post__footer--icon">
+                                <use xlink:href="img/icons.svg#share"></use>
+                            </svg>
                         </div>
                     </div>
                     <div class="post__footer--profile">
@@ -125,20 +148,29 @@
                 <div class="post__footer">
                     <div class="df post__footer--icons">
                         <div class="post__footer--info">
-                            <img src="img/icons/like.svg" alt="like">
+                            <svg class="icon post__footer--icon post__footer--icon--mr">
+                                <use xlink:href="img/icons.svg#like"></use>
+                            </svg>
                             194
                         </div>
                         <div class="post__footer--info">
-                            <img src="img/icons/comment.svg" alt="comment">
+                            <svg class="icon post__footer--icon post__footer--icon--mr">
+                                <use xlink:href="img/icons.svg#comment"></use>
+                            </svg>
                             25
                         </div>
                         <div class="post__footer--info">
-                            <img src="img/icons/save.svg" alt="save">
+                            <svg class="icon post__footer--icon">
+                                <use xlink:href="img/icons.svg#save"></use>
+                            </svg>
                         </div>
                         <div class="post__footer--info">
-                            <img src="img/icons/share.svg" alt="share">
+                            <svg class="icon post__footer--icon">
+                                <use xlink:href="img/icons.svg#share"></use>
+                            </svg>
                         </div>
                     </div>
+
                     <div class="post__footer--profile">
                         <div class="post__footer--profile-info">
                             <div class="profile-info__name">AndreaUi</div>
@@ -188,20 +220,29 @@
                 <div class="post__footer">
                     <div class="df post__footer--icons">
                         <div class="post__footer--info">
-                            <img src="img/icons/like.svg" alt="like">
+                            <svg class="icon post__footer--icon post__footer--icon--mr">
+                                <use xlink:href="img/icons.svg#like"></use>
+                            </svg>
                             1066
                         </div>
                         <div class="post__footer--info">
-                            <img src="img/icons/comment.svg" alt="comment">
-                            540
+                            <svg class="icon post__footer--icon post__footer--icon--mr">
+                                <use xlink:href="img/icons.svg#comment"></use>
+                            </svg>
+                            544
                         </div>
                         <div class="post__footer--info">
-                            <img src="img/icons/save.svg" alt="save">
+                            <svg class="icon post__footer--icon">
+                                <use xlink:href="img/icons.svg#save"></use>
+                            </svg>
                         </div>
                         <div class="post__footer--info">
-                            <img src="img/icons/share.svg" alt="share">
+                            <svg class="icon post__footer--icon">
+                                <use xlink:href="img/icons.svg#share"></use>
+                            </svg>
                         </div>
                     </div>
+
                     <div class="post__footer--profile">
                         <div class="post__footer--profile-info">
                             <div class="profile-info__name">Nixyar</div>
@@ -222,7 +263,9 @@
                         <img class="side-profile__header--img" src="img/avatar3.png" alt="profile">
                         <p class="side-profile__header--name">Nixyar</p>
                     </div>
-                    <img class="side-profile__header--exit" src="img/icons/poweroff.svg" alt="exit">
+                    <svg class="icon exit-profile">
+                        <use xlink:href="img/icons.svg#exit"></use>
+                    </svg>
                 </div>
                 <ul class="side-profile--navbar">
                     <li class="aside-item">Ответы</li>
@@ -236,10 +279,14 @@
             </div>
 
             <div class="right-side--send-post">
-                <button class="send-post__btn">
-                    <img src="img/icons/fire.svg" alt="fire">
-                    Опубликовать пост
-                </button>
+                <a href="new-post.html">
+                    <button class="send-post__btn">
+                        <svg class="icon btn-icon__post">
+                            <use xlink:href="img/icons.svg#fire"></use>
+                        </svg>
+                        Опубликовать пост
+                    </button>
+                </a>
             </div>
 
             <div class="right-side--comment-day">

@@ -650,4 +650,9 @@ aside {
         width: 100%;
         margin-right: 0;
     }
+
+    .form-post__add-video:hover,
+    .form-post__add-img:hover {
+        background: none;
+    }
 }

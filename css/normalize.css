@@ -358,6 +358,7 @@ input {
 textarea {
   outline: none;
   border: none;
+  resize: none;
 }
 
 p {
